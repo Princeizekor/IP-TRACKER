@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ip address tracker</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./ip-address-tracker-master/images/download(12).jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+   crossorigin=""></script>
+</head>
+<body>
+    <header id="head">
+        <h1 class="text">IP Address Tracker</h1>
+
+            <form id="form">
+            <input type="text" id="input" placeholder="Search for any IP address or domain.." required>
+            <button class="enter">
+            <img src="./ip-address-tracker-master/images/icon-arrow.svg" alt="icon-arrow">
+            </button>
+           </form>
+
+           <div class="places">
+               <div class="div">
+                   <p>IP ADDRESS</p>
+                   <h1 class="address">192.212.174.101</h1>
+            </div>
+            <div class="div">
+                <p>LOCATION</p>
+                <h1 class="locations">Brooklyn, NY 10001</h1>
+         </div>
+         <div class="div">
+            <p>TIMEZONE</p>
+            <h1 class="timezone">UTC-05:00</h1>
+     </div>
+     <div class="div">
+        <p>CODE</p>
+        <h1 class="code">BK</h1>
+ </div>
+           </div>
+    </header>
+
+
+    <main id="map">
+
+    </main>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
